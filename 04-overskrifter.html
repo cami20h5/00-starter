@@ -104,6 +104,8 @@
         //Eventhandler funktionen. eventlistener  knyttet til knapperne, der vælger hvad for et filter der er aktivt
         function filterPersoner() {
             filter = this.dataset.troende;
+            document.querySelector(".valgt").classList.remove("valgt");
+            this.classList.add("valgt")
 
         visPersoner(); 
         header.textContent = this.textContent;
