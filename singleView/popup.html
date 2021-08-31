@@ -43,8 +43,50 @@
             width: 100vw;
             height: 100vh;
             background-color: blueviolet;
+            position: fixed;
+            display: none;
+            overflow: scroll;
+           
         }
 
+        #popup article {
+            width: 80vw;
+            height: 20vw;
+            display: flex;
+            background-color: white;
+            margin: 4rem auto;
+            border-radius: 25px;
+            padding: 12px;
+            
+            
+            
+        }
+
+
+        #popup article h3 {
+            display: block;
+        }
+
+
+        #popup article p {
+            display: block;
+        
+        }
+
+        #luk {
+        position: fixed;
+        padding: 1em;
+        font-size: 1.7em;
+        font-weight: bolder;
+        color: white;
+        cursor: pointer;
+      }
+
+
+      #popup p{
+        line-height: 0;
+
+    }
 
 
 
@@ -74,7 +116,30 @@
 
 <body>
 <section id="popup">
+<div id="luk">&#x2715</div>
+<article>
+
+<h2></h2>
+<!-- <img src="" alt=""> -->
+<h3>Titel: <span class="titel"></span> </h3>
+<p> Email:  <span class="email"></span>  </p>
+<p>Fødselsdag:  <span class="fdag"></span>  </p>
+<p>Hobby: <span class="hobby"></span>     </p>
+<p>Troende:    <span class="tro"></span>         </p>
+
+
+</article>
+
 </section>
+
+
+
+
+
+
+
+
+
 
 
     <section id="liste"></section>
